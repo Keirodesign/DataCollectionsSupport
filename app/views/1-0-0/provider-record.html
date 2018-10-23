@@ -27,7 +27,30 @@
         
       
         
-        <h2 class="govuk-heading-l" id="submission">Submission history</h2>
+       
+                    
+        
+        <div class="govuk-tabs" data-module="tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+
+  <ul class="govuk-tabs__list">
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#past-day">
+        Submission history
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#past-week">
+        Reports history
+      </a>
+    </li>
+    
+  </ul>
+
+  <section class="govuk-tabs__panel" id="past-day">
+    <h2 class="govuk-heading-l" id="submission">Submission history</h2>
              
               <table class="govuk-table">
   <caption class="govuk-table__caption govuk-visually-hidden">Dates and file name</caption>
@@ -65,7 +88,10 @@
   </tbody>
 </table>
                 
-                    <h2 class="govuk-heading-l" id="reports">Reports history</h2>
+
+  </section>
+  <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+    <h2 class="govuk-heading-l" id="reports">Reports history</h2>
         <p>View the final reports from each period at the time of close.</p>       
         <h3 class="govuk-heading-m">Academic year 2018 to 2019</h3>
        
@@ -152,6 +178,12 @@
     </tr>     
   </tbody>
 </table>
+        
+        
+
+  </section>
+  
+</div>
 
  
 		
