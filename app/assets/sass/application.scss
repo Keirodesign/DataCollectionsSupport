@@ -14,3 +14,6 @@ $govuk-global-styles: true;
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+.grey-button {background-color:#bfc1c3; box-shadow: 0 2px 0 #6f777b;color:#000;}
+.grey-button:hover, .grey-button:focus {background-color:#bfc1c3; color:#000;}
+
