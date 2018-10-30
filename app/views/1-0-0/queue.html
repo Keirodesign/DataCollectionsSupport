@@ -1,5 +1,5 @@
 
-{% extends "layout.html" %}
+{% extends "layout_blank.html" %}
 
 {% block pageTitle %}
   Submit learner data support interface
@@ -22,6 +22,10 @@
       <h1 class="govuk-heading-xl">
         Queue
       </h1>
+             
+       
+              
+       
       </div>
 </div>
       <div class="govuk-grid-row">
@@ -42,8 +46,7 @@
   <select class="govuk-select govuk-!-width-two-thirds" id="sort" name="sort">
     <option value="1">Processing</option>
     <option value="2" selected>Failed</option>
-    <option value="3">Completed</option>
-    <option value="4">X</option>
+    <option value="3">Completed</option>    
   </select>
 </div>
 </div>
@@ -56,8 +59,7 @@
   <select class="govuk-select govuk-!-width-two-thirds" id="sort" name="sort">
     <option value="1">EAS</option>
     <option value="2" selected>ILR</option>
-    <option value="3">ESF</option>
-    <option value="4">X</option>
+    <option value="3">ESF</option>    
   </select>
         <button type="submit" class="govuk-button">
   Filter
@@ -76,6 +78,7 @@
       <th class="govuk-table__header" scope="col">Provider</th>
       <th class="govuk-table__header govuk-table__header" scope="col">Type</th>
       <th class="govuk-table__header govuk-table__header" scope="col">Status</th>
+        <th class="govuk-table__header govuk-table__header" scope="col">By</th>
         <th class="govuk-table__header govuk-table__header" scope="col">Action</th>
     </tr>
   </thead>
@@ -84,46 +87,26 @@
       <td class="govuk-table__cell govuk-table__cell">Manchester provider 1<br/>123456</td>
       <td class="govuk-table__cell govuk-table__cell">ILR</td>
       <td class="govuk-table__cell govuk-table__cell">Failed</td>
-    <td class="govuk-table__cell govuk-table__cell">
-  <select class="govuk-select govuk-!-width-two-thirds" id="sort" name="sort">
-    <option value="1">Remove</option>
-    <option value="2" selected>Resubmit</option>
-    <option value="3">X</option>
-    <option value="4">X</option>
-  </select>
-        <button type="submit" class="govuk-button">
-  Go
-</button></td>
+        <td class="govuk-table__cell govuk-table__cell">Bob Afett</td>
+        <td class="govuk-table__cell govuk-table__cell"><a href="#">Resubmit file</a>
+  </td>
     </tr>
     <tr class="govuk-table__row">
        <td class="govuk-table__cell govuk-table__cell">Manchester provider 2<br/>123456</td>
       <td class="govuk-table__cell govuk-table__cell">ILR</td>
       <td class="govuk-table__cell govuk-table__cell">Failed</td>
-    <td class="govuk-table__cell govuk-table__cell">
-  <select class="govuk-select govuk-!-width-two-thirds" id="sort" name="sort">
-    <option value="1">Remove</option>
-    <option value="2" selected>Resubmit</option>
-    <option value="3">X</option>
-    <option value="4">X</option>
-  </select>
-        <button type="submit" class="govuk-button">
-  Go
-</button></td>
+        <td class="govuk-table__cell govuk-table__cell">Bob Afett</td>
+        <td class="govuk-table__cell govuk-table__cell"><a href="#">Resubmit file</a>
+  </td>
     </tr>
     <tr class="govuk-table__row">
      <td class="govuk-table__cell govuk-table__cell">Manchester provider 3<br/>123456</td>
       <td class="govuk-table__cell govuk-table__cell">ILR</td>
       <td class="govuk-table__cell govuk-table__cell">Failed</td>
-    <td class="govuk-table__cell govuk-table__cell">
-  <select class="govuk-select govuk-!-width-two-thirds" id="sort" name="sort">
-    <option value="1">Remove</option>
-    <option value="2" selected>Resubmit</option>
-    <option value="3">X</option>
-    <option value="4">X</option>
-  </select>
-        <button type="submit" class="govuk-button">
-  Go
-</button></td>
+        <td class="govuk-table__cell govuk-table__cell">DCT</td>
+        
+    <td class="govuk-table__cell govuk-table__cell"><a href="#">Resubmit file</a>
+ </td>
     </tr>
   </tbody>
 </table>

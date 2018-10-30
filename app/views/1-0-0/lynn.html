@@ -1,5 +1,5 @@
 
-{% extends "layout.html" %}
+{% extends "layout_blank.html" %}
 
 {% block pageTitle %}
   Submit learner data support interface
@@ -13,11 +13,8 @@
         Operations dashboard
           
       </h1>
-        <p class="govuk-body-l">R04 closes in 4 days.</p>
-        <h2 class="govuk-heading-l">Actions</h2>
-        <button type="submit" class="govuk-button grey-button">
-  Pause entire queue
-</button>
+        <p class="govuk-body-l">R02 closes in 4 days.</p>
+
       </div>
       
 </div>
@@ -26,18 +23,26 @@
   <div class="govuk-grid-column-one-third">
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
       <h2 class="govuk-heading-l">263<br/> files processing</h2>
+      <button type="submit" class="govuk-button grey-button">
+  Pause queue
+</button>
+      
       <p><a href="./queue">View the current queue</a></p>
      
   </div>
     <div class="govuk-grid-column-one-third">
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
         <h2 class="govuk-heading-l">4<br/>files failed</h2>
+         <button type="submit" class="govuk-button grey-button">
+  Submit all failed files
+</button>
+       
         <p><a href="./queue">Check failed files</a></p>
   </div>
     <div class="govuk-grid-column-one-third">
     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
-        <h2 class="govuk-heading-l">300<br/>other things</h2>
-        <p><a href="#">Another action</a></p>
+        <h2 class="govuk-heading-l">2 minutes<br/>average processing time</h2>
+        <p><a href="./queue">View the current queue</a></p>
   </div>
 </div>
 
@@ -49,7 +54,7 @@
     Search for a provider
   </label>
   <span id="search-provider-hint" class="govuk-hint">
-    You can use the provider name or UKPRN
+   You can use the provider name, UKPRN or UPIN
   </span>
   <input class="govuk-input govuk-!-width-two-thirds" id="search-provider" name="search-provider" type="text" aria-describedby="search-provider-hint">
 </div>
