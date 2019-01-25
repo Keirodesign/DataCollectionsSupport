@@ -155,7 +155,7 @@ $govuk-global-styles: true;
     margin-top: 1.25em;
     padding: 30px;
 }
-    
+
 }
 
 .bold-xlarge {
@@ -180,3 +180,15 @@ $govuk-global-styles: true;
 
 .ml5 {margin-left:5px;}
 
+.margin-top-20 {
+	margin-top: 20px;
+}
+
+#typeFilter.govuk-checkboxes, #yearFilter.govuk-checkboxes {
+	display: flex;
+
+	.govuk-checkboxes__item {
+		margin-right: 20px;
+	}
+
+}
