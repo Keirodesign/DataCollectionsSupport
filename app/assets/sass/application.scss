@@ -17,6 +17,17 @@ $govuk-global-styles: true;
 .grey-button {background-color:#bfc1c3; box-shadow: 0 2px 0 #6f777b;color:#000;}
 .grey-button:hover, .grey-button:focus {background-color:#bfc1c3; color:#000;}
 
+
+.search-provider-button {
+    margin-top: 15px;
+}
+
+@media (min-width: 640px) {
+	.search-provider-button {
+	    margin-top: 0;
+	}
+}
+
 //None error highlight border
 
 .govuk-highlight-summary {
