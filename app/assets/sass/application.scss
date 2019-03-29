@@ -203,3 +203,26 @@ $govuk-global-styles: true;
 	}
 
 }
+
+#newFilters {
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 16px;
+    padding: 10px;
+  }
+
+  a:visited {
+    color: $govuk-link-colour;
+  }
+
+  a:hover {
+    color: $govuk-link-hover-colour;
+  }
+
+  a.active-background {
+    background-color: #f0f0f0;
+    border-top: 2px solid $govuk-link-colour;
+    border-bottom: 2px solid $govuk-link-colour;
+  }
+}
