@@ -27,6 +27,11 @@ $(document).ready(function () {
 //   }
 // });
 
+$("#backlink").click(function(event) {
+    event.preventDefault();
+    history.back(1);
+});
+
 $("#typeFilter :checkbox").click(function() {
     $("#submissions tr").hide();
     $("#typeFilter :checkbox:checked").each(function() {
