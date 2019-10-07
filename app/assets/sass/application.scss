@@ -245,3 +245,10 @@ $govuk-global-styles: true;
 #cutomTableRow.show {
   display: table-row;
 }
+
+
+.information-banner {
+	@extend .govuk-error-summary;
+	border-color: govuk-colour("purple");
+  }
+
