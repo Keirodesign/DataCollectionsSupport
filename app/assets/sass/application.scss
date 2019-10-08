@@ -252,3 +252,9 @@ $govuk-global-styles: true;
 	border-color: govuk-colour("purple");
   }
 
+
+  @media (min-width: 641px) {
+	.width-170 {
+		width: 170px;
+	}
+  }
