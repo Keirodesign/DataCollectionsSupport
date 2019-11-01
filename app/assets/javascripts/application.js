@@ -53,3 +53,36 @@ $("#yearFilter :checkbox").click(function() {
       $(".year-groups").show();
     }
 });
+
+
+$(".autocomplete__menu").click(function() {
+  $("#searchProviders").trigger("click");
+  
+});
+
+// if ($("li.autocomplete__option.autocomplete__option--no-resutls").is(':visible')) {
+//   alert('is visible');
+// }
+
+$(document).ready(function () {
+
+  if(window.location.href.indexOf("provider-record") > -1) {
+     $('.left-navigation-2 li #1').addClass('active');
+     $('.left-navigation-2 li #1').addClass('govuk-!-font-weight-bold');     
+  }
+
+  if(window.location.href.indexOf("historical-in-period") > -1) {
+     $('.left-navigation-2 li #2').addClass('active');
+     $('.left-navigation-2 li #2').addClass('govuk-!-font-weight-bold');
+  }
+
+  if(window.location.href.indexOf("frm") > -1) {
+     $('.left-navigation-2 li #3').addClass('active');
+     $('.left-navigation-2 li #3').addClass('govuk-!-font-weight-bold');
+  }
+
+  if(window.location.href.indexOf("unsubmitted-files") > -1) {
+    $('.left-navigation-2 li #4').addClass('active');
+    $('.left-navigation-2 li #4').addClass('govuk-!-font-weight-bold');
+ }
+});
