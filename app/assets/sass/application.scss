@@ -521,3 +521,9 @@ $govuk-global-styles: true;
 	}
   
   }
+
+  .border-top {
+    border-top: 1px solid #bfc1c3;
+    padding-top: 15px;
+    margin-bottom: 50px;
+}
