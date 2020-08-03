@@ -84,5 +84,10 @@ $(document).ready(function () {
   if(window.location.href.indexOf("unsubmitted-files") > -1) {
     $('.left-navigation-2 li #4').addClass('active');
     $('.left-navigation-2 li #4').addClass('govuk-!-font-weight-bold');
- }
+  }
+  
+  if(window.location.href.indexOf("archive") > -1) {
+    $('.left-navigation-2 li #5').addClass('active');
+    $('.left-navigation-2 li #5').addClass('govuk-!-font-weight-bold');
+  }
 });
