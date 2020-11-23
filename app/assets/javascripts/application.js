@@ -60,10 +60,21 @@ $(".autocomplete__menu").click(function() {
   
 });
 
+$("#searchProviders").click(function(){
+  if ($("#autocomplete-overlay").val().length === 0 ) {
+    
+    $('#searchProviders').attr('action', 'search-results');
+  } else {
+    $('#searchProviders').attr('action', 'provider-record');
+  }
+});
+
+
+
 // if ($("li.autocomplete__option.autocomplete__option--no-resutls").is(':visible')) {
 //   alert('is visible');
 // }
-
+ 
 $(document).ready(function () {
 
   if(window.location.href.indexOf("provider-record") > -1) {
@@ -89,5 +100,15 @@ $(document).ready(function () {
   if(window.location.href.indexOf("archive") > -1) {
     $('.left-navigation-2 li #5').addClass('active');
     $('.left-navigation-2 li #5').addClass('govuk-!-font-weight-bold');
+  }
+  
+  if(window.location.href.indexOf("devolved") > -1) {
+    $('.left-navigation-2 li #6').addClass('active');
+    $('.left-navigation-2 li #6').addClass('govuk-!-font-weight-bold');
+  }
+
+  if(window.location.href.indexOf("authority-record") > -1) {
+    $('.left-navigation-2 li #7').addClass('active');
+    $('.left-navigation-2 li #7').addClass('govuk-!-font-weight-bold');
   }
 });

@@ -12,27 +12,46 @@
   },
   html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
 }) }}
+
 <div class="govuk-grid-row">
+
+    
+
   <div class="govuk-grid-column-two-thirds">
-    <a href="search-results.html" class="govuk-back-link">Back to search results</a>
+    <a href="dashboard.html" class="govuk-back-link">Back</a>
+    <br> <br>
+    <span class="govuk-heading-m">Combined Authority 1<span class="govuk-caption-m">UKPRN: 00012345, UPIN: 1234</span></span>
+     
   </div>
   <div class="govuk-grid-column-one-third margin-top-20">
 
-    <label class="govuk-label govuk-!-width-two-thirds " for="search-provider">
-       Search for a provider
-    </label>
-          <div class="mt15">
-            <input class="govuk-input govuk-!-width-two-thirds" id="provider-search" name="search-provider" placeholder="Name or UKPRN"
-            type="search" value="" aria-describedby="provider-search"> <a href="search-results.html" type="submit" class="govuk-button">Search</a>
-          </div>
+      <div class="standard-search">
+          
+            
+              <span class="govuk-body white-text">Search for a provider</span>
+              <br> <br>
+              <form id="searchProviders" class="govuk-form-group" action=" ">
+                <div id="tt-overlay" class="autocomplete-wrapper"></div>
+                <button id="searchProviders" type="search" class="govuk-button" ><img src="https://www.gov.uk/assets/frontend/govuk_publishing_components/search-button-ca89b2a79f944909ceb7370d3f0b78811d32b96e883348fcd8886f63dd619585.png"></img></button>
+              </form>
+            
+        </div>
   </div>
 </div>
+
 {% endblock %}
 
 {% block content %}
 
-<div class="govuk-grid-row">
-<div class="govuk-grid-column-two-thirds">
+
+<div class="govuk-grid-row flex">
+
+
+    <div id="left-nav-wrapper" class="govuk-grid-column-one-quarter flex-grow-1"> 
+        {% include "./includes/left-nav-ma.html" %}
+      </div>
+
+<div class="govuk-grid-column-three-quarters">
   <h1 class="govuk-heading-xl">Reports</h1>
 
   <p>These downloads contain the Adult Education Funding Summary report and Adult Education Occupancy report.</p>
@@ -82,5 +101,7 @@
 </div> -->
 
 </div>
+
+{% include "./includes/auto-js.html" %}
 
 {% endblock %}
